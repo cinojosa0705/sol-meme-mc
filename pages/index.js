@@ -1,23 +1,16 @@
 import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Degen from '@components/Degen'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="min-h-screen flex items-center justify-center w-full">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>What if... Solana</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+      <main className="flex-1 w-full mt-[-5rem]">
+        <Degen />
       </main>
-
-      <Footer />
     </div>
   )
 }
